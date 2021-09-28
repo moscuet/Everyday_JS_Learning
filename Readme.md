@@ -3,7 +3,7 @@ Purpose of this learning is to choose a js topics for a day and explore deepdown
 
 ## Day_01
 
-### Topics: Js variable and hoisting
+### Topics: Js  hoisting
 
 #### Hoisting
 JavaScript Hoisting refers to the process whereby the interpreter allocates memory for variable and function declarations prior to execution of the code. Declarations that are made using var are initialized with a default value of undefined. Declarations made using let and const are not initialized as part of hoisting. 
@@ -19,10 +19,18 @@ fn(5) // 5
 function f1( num){
     console.log(num)
 }
+// function declaration are not hoisted even if it's declared with var keyword 
+fn(5) // 
 
-fn(5) // 5
+f2() //  //ReferenceError
+var f2 = function (){
+    console.log('f2')
+}
+f2()// f2
+
 
 ```
+
 ```JS
 console.log(num); // Returns 'undefined' from hoisted var declaration (not 5)
 var num; // Declaration
