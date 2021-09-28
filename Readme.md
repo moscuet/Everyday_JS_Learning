@@ -16,14 +16,15 @@ One of the advantages of JavaScript putting function declarations into memory be
 
 ```JS
 ex-1:
-fn(5) // 5
+f1(5) // 5
 function f1( num){
     console.log(num)
 }
-// function declaration are not hoisted even if it's declared with var keyword 
-fn(5) // 5
+f1(5) // 5
 
 ex-2:
+
+// function declaration are not hoisted even if it's declared with var keyword 
 f2() // ReferenceError
 console.log(f2)// print undefined because f2 is considered as a variable so it's declaration is hoisted with initialized value undefined
 
