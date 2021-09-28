@@ -24,7 +24,7 @@ f1(5) // 5
 
 ex-2:
 
-// function declaration are not hoisted even if it's declared with var keyword 
+// function expression are not hoisted even if it's declared with var keyword 
 f2() // ReferenceError
 console.log(f2)// print undefined because f2 is considered as a variable so it's declaration is hoisted with initialized value undefined
 
@@ -57,11 +57,11 @@ console.log(c,d) // 10,20
 (Mozilla)
 
 
-
+interesting case: 
 var name = "Baggins";
 
 (function () {
-    // Outputs: "Original name was undefined"
+    // Outputs: "Original name was undefined" // here name isn't in global scopes but locally scooped inside the function because it's hoisted by declaration with var keyword otherwise it's value would be Baggins
     console.log("Original name was " + name);
 
     var name = "Underhill";
