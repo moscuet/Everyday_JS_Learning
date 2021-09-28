@@ -48,10 +48,24 @@ let c = 10
 const d= 20
 
 console.log(c,d) // 10,20
-```
+
 (Mozilla)
 
 
+
+var name = "Baggins";
+
+(function () {
+    // Outputs: "Original name was undefined"
+    console.log("Original name was " + name);
+
+    var name = "Underhill";
+
+    // Outputs: "New name is Underhill"
+    console.log("New name is " + name);
+})();
+
+```
 
 #### key words: interpreter, JavaScript engine , compiler and interpreter
 1. interpreter:
