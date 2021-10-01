@@ -6,8 +6,9 @@ Purpose of this learning is to choose a js topics for a day and explore deepdown
 ### Topics: Js  hoisting
 
 #### Hoisting
-JavaScript Hoisting refers to the process whereby the interpreter allocates memory for variable and function declarations prior to execution of the code. Declarations that are made using var are initialized with a default value of undefined. Declarations made using let and const are not initialized as part of hoisting. 
-
+JavaScript Hoisting refers to the process whereby the interpreter allocates memory for variable and function declarations prior to execution of the code. Declarations that are made using var are initialized with a default value of undefined. Declarations made using let and const are not initialized as part of hoisting.
+conceptually saying,  Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution.
+variable declarations are processed before any code is executed.
 This allows variables to appear in code before they are defined. Note however, that any variable initialization in the original code will not happen until the line of code is executed.
 
 One of the advantages of JavaScript putting function declarations into memory before it executes any code segment is that it allows you to use a function before you declare it in your code.
@@ -55,6 +56,9 @@ const d= 20
 console.log(c,d) // 10,20
 
 (Mozilla)
+
+undeclared variables do not exist until code assigning them is executed.
+Therefore, assigning a value to an undeclared variable implicitly creates it as a global variable when the assignment is executed. This means that, all undeclared variables are global variables.
 
 
 interesting case: 
@@ -105,6 +109,8 @@ In contrast to const and let, the scope of the var variables is defined only by 
 can be accessed in its scope before declaration  and value Will be undefined
 
 all variable declaration are being hoisted so a memory space is being created for it.
-only variable declare with var are being attached to global /window object and initialized with value 'undefined' during hoisting. so unlike let nd const, it can be accessed even before declaration but with default assigned value 'undefined'.
-Note: 
+only variable declare with var (in outside of function , it's attached to global /window object ) are hoisted and moved  to the top of it's scope and initialized with value 'undefined' during hoisting. so unlike let nd const, it can be accessed even before declaration but with default assigned value 'undefined'.
+so Variables declared with let and const remain uninitialised at the beginning of execution whilst variables declared with var are initialised with a value of undefined.
+Variables declared with let and const remain uninitialised at the beginning of execution whilst variables declared with var are initialised with a value of undefined.
+##### Notes:
 1. scope: The concept of scope defines the limits where the variable is accessible. new value can be assign to it but can't be redeclare.
