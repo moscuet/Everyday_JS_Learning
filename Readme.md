@@ -81,3 +81,28 @@ var name = "Baggins";
  Interpreter translates just one statement of the program at a time into machine code. Compiler scans the entire program and translates the whole of it into machine code at once. An interpreter takes very less time to analyze the source code. ... A compiler takes a lot of time to analyze the source code.
 
 
+
+
+## Day02
+
+### Topics: Let, const, var
+
+#### const
+must initialized with a value together with declaration. Value can't be changed or reassigned.
+The code block and a function body create a scope for const variables. 
+you can also access the const variable value only after the declaration statement.
+
+#### let
+can be declare with without initialization. new value can be assign but cannot declaRe again.
+while being declared, isn’t initialized so it has an undefined.
+The scope of the let variables is defined the same way as for const: by a code block or function body.
+Same as with const, you cannot access a let variable before the declaration. it will show reference errors if try to access before declaration.
+
+#### var
+can be declare with without initialization. new value can be assign but also can be declaRe again.
+By default, JavaScript considers uninitialized variables as having the special value undefined.
+In contrast to const and let, the scope of the var variables is defined only by the function body.
+can be accessed in its scope before declaration  and value Will be undefined
+
+Note: 
+1. scope: The concept of scope defines the limits where the variable is accessible. new value can be assign to it but can't be declarr
