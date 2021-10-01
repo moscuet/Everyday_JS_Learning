@@ -101,7 +101,7 @@ var name = "Baggins";
  Interpreter translates just one statement of the program at a time into machine code. Compiler scans the entire program and translates the whole of it into machine code at once. An interpreter takes very less time to analyze the source code. ... A compiler takes a lot of time to analyze the source code.
 
 
-
+[Top](#everyday_js_learning)
 
 ## Day_02
 
