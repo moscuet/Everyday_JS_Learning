@@ -1,6 +1,24 @@
 # Everyday_js_learning
 Purpose of this learning is to choose a js topics for a day and explore deepdown into it. 
 
+
+<!-- TOC -->
+
+    - [Day_01](#Day_01)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [What's New?](#whats-new)
+    - [Question](#question)
+    - [License](#license)
+    - [Links](#links)
+
+<!-- /TOC -->
+
+
+
+
+
+
 ## Day_01
 
 ### Topics: Js  hoisting
