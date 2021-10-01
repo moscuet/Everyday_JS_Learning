@@ -6,8 +6,8 @@ Purpose of this learning is to choose a js topics for a day and explore deepdown
 
 - [Everyday_js_learning](#everyday_js_learning)
     - [Day_01: var let const](#day_01)
-    - [Day_02](#day_02)
-
+    - [Day_02: Let, const, var](#day_02)
+      - [var](#var)
 
 <!-- /TOC -->
 
