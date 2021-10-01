@@ -4,13 +4,10 @@ Purpose of this learning is to choose a js topics for a day and explore deepdown
 
 <!-- TOC -->
 
-    - [Day_01](#Day_01)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [What's New?](#whats-new)
-    - [Question](#question)
-    - [License](#license)
-    - [Links](#links)
+- [Everyday_js_learning](#everyday_js_learning)
+    - [Day_01](#day_01)
+    - [Day_02](#day_02)
+
 
 <!-- /TOC -->
 
@@ -105,7 +102,7 @@ var name = "Baggins";
 
 
 
-## Day02
+## Day_02
 
 ### Topics: Let, const, var
 
