@@ -88,7 +88,7 @@ var name = "Baggins";
 ### Topics: Let, const, var
 
 #### const
-must initialized with a value together with declaration. Value can't be changed or reassigned.
+must initialized with a value together with declaration. Value can't be changed or reassigned. cannot redeclare
 The code block and a function body create a scope for const variables. 
 you can also access the const variable value only after the declaration statement.
 
@@ -99,10 +99,12 @@ The scope of the let variables is defined the same way as for const: by a code b
 Same as with const, you cannot access a let variable before the declaration. it will show reference errors if try to access before declaration.
 
 #### var
-can be declare with without initialization. new value can be assign but also can be declaRe again.
+can be declare with without initialization. new value can be assign and also can be declaRe again.
 By default, JavaScript considers uninitialized variables as having the special value undefined.
 In contrast to const and let, the scope of the var variables is defined only by the function body.
 can be accessed in its scope before declaration  and value Will be undefined
 
+all variable declaration are being hoisted so a memory space is being created for it.
+only variable declare with var are being attached to global /window object and initialized with value 'undefined' during hoisting. so unlike let nd const, it can be accessed even before declaration but with default assigned value 'undefined'.
 Note: 
 1. scope: The concept of scope defines the limits where the variable is accessible. new value can be assign to it but can't be declarr
